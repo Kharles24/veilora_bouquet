@@ -1,0 +1,271 @@
+<!DOCTYPE html><html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Veilora Bouquet menyediakan buket bunga cantik untuk berbagai momen spesial.">
+    <title>Veilora Bouquet | Buket Bunga</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body><!-- NAVIGASI -->
+<header class="navbar">
+    <div class="container navbar-content">
+        <a href="#beranda" class="logo">Veilora<span>Bouquet</span></a>
+
+        <button id="menuToggle" class="menu-toggle" aria-label="Buka menu">
+            ☰
+        </button>
+
+        <nav class="nav-menu" id="navMenu">
+            <a href="#beranda">Beranda</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang Kami</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+
+        <button class="cart-button" id="tombolKeranjang">
+            🛒 Keranjang <span id="jumlahKeranjang">0</span>
+        </button>
+    </div>
+</header>
+
+<main>
+    <!-- BERANDA -->
+    <section class="hero" id="beranda">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p class="subtitle">BUNGA UNTUK SETIAP CERITA</p>
+                <h1>Hadiah Kecil,<br><span>Makna Besar.</span></h1>
+
+                <p class="hero-description">
+                    Temukan buket bunga cantik untuk orang-orang
+                    tersayang. Hadirkan kebahagiaan melalui rangkaian
+                    bunga yang penuh makna.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#produk" class="button button-primary">
+                        Lihat Koleksi
+                    </a>
+                    <a href="#tentang" class="button button-outline">
+                        Tentang Kami
+                    </a>
+                </div>
+
+                <div class="hero-information">
+                    <div>
+                        <strong>Istimewa</strong>
+                        <span>Untuk orang tersayang</span>
+                    </div>
+                    <div>
+                        <strong>Custom</strong>
+                        <span>Sesuai keinginanmu</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img
+                    src="assets/images/LOGOBKT.jpeg"
+                    alt="Buket bunga Veilora"
+                    onerror="this.style.display='none'; document.getElementById('heroPlaceholder').style.display='flex';"
+                >
+                <div class="hero-placeholder" id="heroPlaceholder">
+                    <span>💐</span>
+                    <h3>Veilora Bouquet</h3>
+                    <p>Merangkai bunga, menyampaikan cinta.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEUNGGULAN -->
+    <section class="benefits">
+        <div class="container benefits-grid">
+            <div class="benefit-item">
+                <span>🌷</span>
+                <div>
+                    <h3>Desain Cantik</h3>
+                    <p>Rangkaian bunga yang menarik.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <span>🎁</span>
+                <div>
+                    <h3>Cocok untuk Hadiah</h3>
+                    <p>Untuk berbagai momen spesial.</p>
+                </div>
+            </div>
+
+            <div class="benefit-item">
+                <span>💌</span>
+                <div>
+                    <h3>Bisa Custom</h3>
+                    <p>Pilih buket sesuai selera.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DAFTAR PRODUK -->
+    <section class="products section-padding" id="produk">
+        <div class="container">
+            <div class="section-heading">
+                <p class="subtitle">KOLEKSI KAMI</p>
+                <h2>Buket Favorit <span>Untukmu</span></h2>
+                <p>Pilih buket yang paling sesuai untuk orang tersayang.</p>
+            </div>
+
+            <!-- PENCARIAN -->
+            <div class="product-toolbar">
+                <div class="search-box">
+                    <span>🔎</span>
+                    <input
+                        type="search"
+                        id="pencarianProduk"
+                        placeholder="Cari nama buket..."
+                        aria-label="Cari nama buket"
+                    >
+                </div>
+
+                <!-- KATEGORI HARGA -->
+                <div class="category-filters">
+                    <button class="filter-button active" data-kategori="Semua">
+                        Semua
+                    </button>
+
+                    <button class="filter-button" data-kategori="25-55">
+                        25K–55K
+                    </button>
+
+                    <button class="filter-button" data-kategori="55-100">
+                        55K–100K
+                    </button>
+
+                    <button class="filter-button" data-kategori="100-200">
+                        100K–200K
+                    </button>
+                </div>
+            </div>
+
+            <!-- PRODUK DIISI OTOMATIS OLEH JAVASCRIPT -->
+            <div class="product-grid" id="daftarProduk"></div>
+
+            <p class="product-note">
+                Harga tercantum dalam Rupiah (IDR).
+            </p>
+        </div>
+    </section>
+
+    <!-- TENTANG KAMI -->
+    <section class="about section-padding" id="tentang">
+        <div class="container about-content">
+            <div class="about-visual">
+                <div class="about-card">
+                    <span>💐</span>
+                    <h3>Every Flower Tells a Story</h3>
+                    <p>Setiap buket memiliki cerita tersendiri.</p>
+                </div>
+            </div>
+
+            <div class="about-text">
+                <p class="subtitle">TENTANG VEILORA</p>
+                <h2>Bukan Sekadar Bunga, <span>Tapi Sebuah Perasaan.</span></h2>
+
+                <p>
+                    Veilora Bouquet hadir untuk membantu kamu
+                    menyampaikan perasaan melalui rangkaian bunga
+                    yang cantik dan bermakna.
+                </p>
+
+                <p>
+                    Mulai dari hadiah ulang tahun, wisuda,
+                    anniversary, hingga kejutan sederhana, pilihlah
+                    buket yang paling sesuai dengan momenmu.
+                </p>
+
+                <a href="#produk" class="button button-primary">
+                    Temukan Buketmu
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARA MEMESAN -->
+    <section class="how-to section-padding">
+        <div class="container">
+            <div class="section-heading">
+                <p class="subtitle">MUDAH DAN PRAKTIS</p>
+                <h2>Cara <span>Memesan</span></h2>
+                <p>Ikuti langkah mudah berikut.</p>
+            </div>
+
+            <div class="steps-grid">
+                <div class="step-card">
+                    <span>🛍️</span>
+                    <h3>1. Pilih Buket</h3>
+                    <p>Pilih buket sesuai selera dan anggaranmu.</p>
+                </div>
+
+                <div class="step-card">
+                    <span>🛒</span>
+                    <h3>2. Masukkan Keranjang</h3>
+                    <p>Tambahkan produk yang ingin kamu pesan.</p>
+                </div>
+
+                <div class="step-card">
+                    <span>💬</span>
+                    <h3>3. Pesan via WhatsApp</h3>
+                    <p>Kirim detail pesanan kepada kami.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KONTAK -->
+    <section class="cta-section" id="kontak">
+        <div class="container cta-content">
+            <p class="subtitle">BUAT MOMEN LEBIH BERKESAN</p>
+            <h2>Sudah Menemukan <span>Buket Favoritmu?</span></h2>
+            <p>Pilih buket cantik dan buat orang tersayang tersenyum hari ini.</p>
+
+            <button class="button button-light" id="tombolWhatsApp">
+                💬 Hubungi Kami
+            </button>
+        </div>
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container footer-content">
+        <div class="footer-brand">
+            <a href="#beranda" class="logo">Veilora<span>Bouquet</span></a>
+            <p>Merangkai bunga, menyampaikan cinta.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Navigasi</h3>
+            <a href="#beranda">Beranda</a>
+            <a href="#produk">Produk</a>
+            <a href="#tentang">Tentang Kami</a>
+        </div>
+
+        <div class="footer-links">
+            <h3>Hubungi Kami</h3>
+            <button class="footer-contact" id="tombolWhatsAppFooter">
+                WhatsApp
+            </button>
+            <p>Kami siap membantu pesananmu.</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; <span id="tahunSekarang"></span> Veilora Bouquet.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
